@@ -1,28 +1,46 @@
 [
   {
     "role": "IT & Front End Support",
-    "organization": "Santos Medical",
+    "organization": "Santos Medical Center",
     "startDate": "Jun, 2025",
     "endDate": "Present",
-    "experiences": ["Worked on Google Maps", "Reduced load times by 50%"],
+    "experiences": ["Shipped UI tweaks (HTML/CSS/JS) to speed scheduling, billing, records access", 
+                    "Integrated Twilio API for SMS reminders; improved patient comms",
+                    "Deployed updates & features on-site with minimal downtime",
+                    "Collected staff feedback; released user-friendly, HIPAA-aligned fixes",
+                    "Used Git for version control; wrote clear internal docs"
+                  ],
     "imageSrc": "history/google.png"
   },
   {
-    "role": "UI Designer",
-    "organisation": "Mirosoft",
-    "startDate": "Aug, 2021",
-    "endDate": "Aug, 2022",
-    "experiences": ["Worked on Windows 11", "Designed the control panel"],
+    "role": "Project Manager",
+    "organization": "GM Exteriors",
+    "startDate": "May, 2022",
+    "endDate": "Present",
+    "experiences": ["Scoped projects from qualified leads; set scope/schedule/budget", 
+                    "Scheduled crews & materials; coordinated end-to-end logistics",
+                    "Drove day-to-day install execution; removed blockers",
+                    "Managed client comms & changes; resolved on-site issues",
+                    "Closed out with QA/punch lists; ensured client sign-off & satisfaction"
+                  ],
     "imageSrc": "history/microsoft.png"
   },
   {
     "role": "Student",
     "organization": "Florida International University",
-    "startDate": "Jan, 2022",
+    "startDate": "B.A. Comp Sci - Jan, 2022",
     "endDate": "Aug, 2025",
     "experiences": [
-      "Worked on component library",
-      "Helped create UI components"
+      "Human-Computer Interaction",
+      "Software Eng I",
+      "Systems Programming",
+      "Programming II",
+      "Database Management",
+      "Applied Linear Structures",
+      "Discrete Structures",
+      "Data Structures",
+      "Computer Architecture",
+      "Operating Systems Principles"
     ],
     "imageSrc": "history/netflix.png"
   }
