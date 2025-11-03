@@ -3,6 +3,7 @@ import { About } from "./components/About/About";
 import { Hero } from "./components/Hero/Hero";
 import { NavBar } from "./components/NavBar/NavBar";
 import { Experience } from "./components/Experience/Experience";
+import { Contact } from "./components/Contact/Contact";
 
 function App() {
   return <div className={styles.App}>;
@@ -10,6 +11,7 @@ function App() {
     <Hero />;
     <About />;
     <Experience />;
+    <Contact />;
   </div>;
 }
 
