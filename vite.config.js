@@ -1,12 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
-export default defineConfig({
+// IMPORTANT: use repo base only in production so localhost stays '/'
+// Replace React-Portfolio-Site with your repo name if different
+export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  css: {
-    modules: {
-      localsConvention: "camelCase",
-    }
-  }
-})
+  base: mode === 'production' ? '/React-Portfolio-Site/' : '/',
+}))
