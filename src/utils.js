@@ -1,18 +1,27 @@
 // src/utils.js
 
-// Build a manifest of all files under /src/assets at build time.
-// Vite will return hashed, base-prefixed URLs.
-const imageManifest = import.meta.glob('/src/assets/**/*', {
+// Map everything under src/assets at build time
+// NOTE: pattern is relative to THIS file (./assets/...)
+const imageManifest = import.meta.glob('./assets/**/*', {
   eager: true,
   as: 'url',
 });
 
-// Call with paths like "contact/emailIcon.png"
+// Call like: getImageUrl('hero/heroImage.png')
 export const getImageUrl = (path) => {
-  const key = `/src/assets/${path}`;
-  const url = imageManifest[key];
+  const key = `./assets/${path}`;
+  let url = imageManifest[key];
+
   if (!url) {
     console.warn(`[getImageUrl] Not found: ${key}`);
+    return '';
   }
-  return url || '';
+
+  // If Vite gave us "/assets/..." (domain-root), prefix the site's base.
+  if (url.startsWith('/')) {
+    const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
+    url = `${base}${url}`;
+  }
+
+  return url;
 };
