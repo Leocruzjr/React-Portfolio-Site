@@ -16,7 +16,7 @@ export const About = () => {
             ></img>
         <ul className={Styles.itemList}>
             <li className={Styles.item}>
-                <img src={getImageUrl("about/cursorIcon.png")} alt='Cursor Icon'/>
+                <img src={getImageUrl("./about/cursorIcon.png")} alt='Cursor Icon'/>
                 <div>
                     <h3>Frontend Developer</h3>
                         <p>
@@ -27,7 +27,7 @@ export const About = () => {
                 </div>
             </li>
             <li className={Styles.item}>
-                <img src={getImageUrl("about/serverIcon.png")} alt='Server Icon'/>
+                <img src={getImageUrl("./about/serverIcon.png")} alt='Server Icon'/>
                 <div>
                     <h3>Backend</h3>
                         <p>
@@ -36,7 +36,7 @@ export const About = () => {
                 </div>
             </li>
             <li className={Styles.item}>
-                <img src={getImageUrl("about/uiIcon.png")} alt='UI Icon'/>
+                <img src={getImageUrl("./about/uiIcon.png")} alt='UI Icon'/>
                 <div>
                     <h3>UI Design</h3>
                         <p>
