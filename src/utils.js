@@ -5,5 +5,5 @@ export const getImageUrl = (p) => {
   // remove any accidental leading slashes to avoid "assets//..."
   const clean = p.replace(/^\/+/, '')
   // For files in public/assets
-  return `${import.meta.env.BASE_URL}assets/${clean}`
+  return `${import.meta.env.BASE_URL}./assets/${clean}`
 }
