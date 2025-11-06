@@ -1,27 +1,32 @@
 // src/utils.js
 
-// Map everything under src/assets at build time
-// NOTE: pattern is relative to THIS file (./assets/...)
-const imageManifest = import.meta.glob('./assets/**/*', {
+// Use ABSOLUTE keys so lookups are stable across dev/prod
+const manifest = import.meta.glob('/src/assets/**/*', {
   eager: true,
   query: '?url',
   import: 'default',
 });
 
-// Call like: getImageUrl('hero/heroImage.png')
-export const getImageUrl = (path) => {
-  const key = `./assets/${path}`;
-  let url = imageManifest[key];
+// Usage: getImageUrl('skills/html.png') or 'contact/emailIcon.png'
+export function getImageUrl(path) {
+  const key = `/src/assets/${path}`;
+  let url = manifest[key];
 
   if (!url) {
     console.warn(`[getImageUrl] Not found: ${key}`);
     return '';
   }
 
-if (/^https?:\/\//i.test(url)) return url;
+  // If Vite gave an absolute or inlined URL, just return it
+  if (/^(?:https?:|data:|blob:)/i.test(url)) return url;
 
-const base = import.meta.env.BASE_URL || '/';
-const absBase = new URL(basePath, window.location.origin);
+  // Prefix with app base (GH Pages) without double-prefix
+  const rawBase = (import.meta.env?.BASE_URL) ?? '/';
+  const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
+  if (url.startsWith(base)) return url;
+  if (url.startsWith('/')) return base + url.slice(1);
+  return base + url;
+}
 
-return new URL(url, replace(/^\//, ''), absBase).toString();
-};
+// (Optional) quick debug helper
+export const __listAssetKeys = () => Object.keys(manifest);

@@ -4,11 +4,9 @@
     "organization": "Santos Medical Center",
     "startDate": "Jun, 2025",
     "endDate": "Present",
-    "experiences": ["Shipped UI tweaks (HTML/CSS/JS) to speed scheduling, billing, records access", 
-                    "Integrated Twilio API for SMS reminders; improved patient comms",
-                    "Deployed updates & features on-site with minimal downtime",
-                    "Collected staff feedback; released user-friendly, HIPAA-aligned fixes",
-                    "Used Git for version control; wrote clear internal docs"
+    "experiences": ["Shipped UI tweaks (HTML/CSS/JS) to speed scheduling/billing/records", 
+                    "Integrated Twilio SMS reminders; improved patient comms",
+                    "Deployed updates on-site with minimal downtime; HIPAA-aligned fixes"
                   ],
     "imageSrc": "history/google.png"
   },
@@ -17,11 +15,9 @@
     "organization": "GM Exteriors",
     "startDate": "May, 2022",
     "endDate": "Present",
-    "experiences": ["Scoped projects from qualified leads; set scope/schedule/budget", 
-                    "Scheduled crews & materials; coordinated end-to-end logistics",
-                    "Drove day-to-day install execution; removed blockers",
-                    "Managed client comms & changes; resolved on-site issues",
-                    "Closed out with QA/punch lists; ensured client sign-off & satisfaction"
+    "experiences": ["Scoped jobs, set schedule/budget, coordinated crews & materials", 
+                    "Drove installs, cleared blockers, handled client changes/issues",
+                    "Closed out with QA/punch lists to ensure sign-off"
                   ],
     "imageSrc": "history/microsoft.png"
   },
@@ -31,16 +27,7 @@
     "startDate": "B.A. Comp Sci - Jan, 2022",
     "endDate": "Aug, 2025",
     "experiences": [
-      "Human-Computer Interaction",
-      "Software Eng I",
-      "Systems Programming",
-      "Programming II",
-      "Database Management",
-      "Applied Linear Structures",
-      "Discrete Structures",
-      "Data Structures",
-      "Computer Architecture",
-      "Operating Systems Principles"
+      "Core: HCI, Software Eng I, Systems/OS, Data Structures, DB, Discrete/Applied Linear"
     ],
     "imageSrc": "history/netflix.png"
   }
