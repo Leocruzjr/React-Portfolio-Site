@@ -4,7 +4,8 @@
 // NOTE: pattern is relative to THIS file (./assets/...)
 const imageManifest = import.meta.glob('./assets/**/*', {
   eager: true,
-  as: 'url',
+  query: '?url',
+  import: 'default',
 });
 
 // Call like: getImageUrl('hero/heroImage.png')
@@ -17,11 +18,6 @@ export const getImageUrl = (path) => {
     return '';
   }
 
-  // If Vite gave us "/assets/..." (domain-root), prefix the site's base.
-  if (url.startsWith('/')) {
-    const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
-    url = `${base}${url}`;
-  }
-
-  return url;
+const base = import.meta.env.BASE_URL || '/';
+return new URL(url, base).toString();
 };
