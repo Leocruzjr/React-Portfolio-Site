@@ -22,7 +22,6 @@
 .title {
     font-size: 72px;
     font-weight: 900;
-    margin-top: 25px;
     margin-bottom: 33px;
     font-family: var(--font-roboto);
     background: linear-gradient(90deg, rgba(255,255,255,1) 79%, rgba(255,255,255,0) 120%);
@@ -85,17 +84,16 @@
 }
 
 .bottomBlur {
-    position: absolute;
-    width: 70vw;
-    height: 50vw;
-    min-width: 350px;
-    min-height: 250px;
-    top: 246px;
-    right: -25vw;
-    border-radius: 764px;
-    background: rgba(25, 55, 109, 0.7);
-    filter: blur(100px);
-    z-index: 0;
+  position: absolute;
+  right: 0;                    /* no negative offsets */
+  transform: translateX(15%);  /* nudge right, but keep box inside */
+  width: clamp(350px, 60vw, 900px);
+  height: clamp(250px, 50vw, 700px);
+  border-radius: 764px;
+  background: rgba(25,55,109,0.7);
+  filter: blur(100px);
+  pointer-events: none;
+  z-index: 0;
 }
 
 @media screen and (max-width: 830px) {
