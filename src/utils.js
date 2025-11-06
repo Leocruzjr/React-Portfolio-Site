@@ -18,6 +18,10 @@ export const getImageUrl = (path) => {
     return '';
   }
 
+if (/^https?:\/\//i.test(url)) return url;
+
 const base = import.meta.env.BASE_URL || '/';
-return new URL(url, base).toString();
+const absBase = new URL(basePath, window.location.origin);
+
+return new URL(url, replace(/^\//, ''), absBase).toString();
 };
