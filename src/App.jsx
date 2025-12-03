@@ -4,15 +4,15 @@ import { Hero } from "./components/Hero/Hero";
 import { NavBar } from "./components/NavBar/NavBar";
 import { Experience } from "./components/Experience/Experience";
 import { Contact } from "./components/Contact/Contact";
-{/*import { Projects } from "./components/Projects/Projects";*/}
+import { Projects } from "./components/Projects/Projects";
 
 function App() {
-  return <div className={styles.App}>;
+  return <div className={styles.App}>
     <NavBar />
     <Hero />
     <Experience />
     <About />
-    {/*<Projects />;* ----> Add Later on along with Files in src/Projects*/}
+    <Projects />
     <Contact />
   </div>
 }
