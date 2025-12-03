@@ -1,4 +1,3 @@
-{/* 
 import React from 'react';
 
 import { Project } from "../../data/projects.json";
@@ -11,7 +10,7 @@ export const ProjectCard = ({
     <div>
         <img 
             src={getImageUrl(imageSrc)} 
-            alt={`Image of ${title}`}>
+            alt={`Image of ${title}`}
         />
         <h3>{title}</h3>
         <p>{description}</p>
@@ -25,6 +24,6 @@ export const ProjectCard = ({
             <a href={source}>Source</a>
         </div>
     </div>
-  );
+  ));
 };
-*/}
+

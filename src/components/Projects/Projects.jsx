@@ -1,4 +1,4 @@
-{/* 
+
 import React from 'react';
 
 import { Project } from "../../data/projects.json";
@@ -9,13 +9,11 @@ export const Projects = () => {
     <section>
         <h2>Projects</h2>
         <div>
-            {projects.map((project, id) => {
+            {Projects.map((project, id) => {
                 return (
                 <ProjectCard key={id} project={project}/>
                 );
-            })}
+            })};
         </div>
     </section>
-  );
-};
-*/}
+  )};
