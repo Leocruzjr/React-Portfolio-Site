@@ -4,27 +4,28 @@
     "organization": "Santos Medical Center",
     "startDate": "Jun, 2025",
     "endDate": "Present",
-    "experiences": ["Shipped UI tweaks (HTML/CSS/JS) to speed scheduling/billing/records", 
-                    "Integrated Twilio SMS reminders; improved patient comms",
-                    "Deployed updates on-site with minimal downtime; HIPAA-aligned fixes"
+    "experiences": ["Shipped UI tweaks (C#) to speed scheduling/billing/records", 
+                    "Integrated Twilio SMS reminders; improved patient communications",
+                    "Deployed updates on-site with minimal downtime; HIPAA-aligned fixes",
+                    "Maintain computer performance and establish Windows user account restrictions"
                   ],
     "imageSrc": "history/google.png"
   },
   {
     "role": "Project Manager",
     "organization": "GM Exteriors",
-    "startDate": "May, 2022",
+    "startDate": "May, 2021",
     "endDate": "Present",
     "experiences": ["Scoped jobs, set schedule/budget, coordinated crews & materials", 
                     "Drove installs, cleared blockers, handled client changes/issues",
-                    "Closed out with QA/punch lists to ensure sign-off"
+                    "Closed out with QA/punch lists to ensure sign-off and obtain feedback for improvement if applicable"
                   ],
     "imageSrc": "history/microsoft.png"
   },
   {
     "role": "Student",
     "organization": "Florida International University",
-    "startDate": "B.A. Comp Sci - Jan, 2022",
+    "startDate": "Bachelors in CS - Jan, 2022",
     "endDate": "Aug, 2025",
     "experiences": [
       "Core: HCI, Software Eng I, Systems/OS, Data Structures, DB, Discrete/Applied Linear"
