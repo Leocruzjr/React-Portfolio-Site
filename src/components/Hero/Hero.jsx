@@ -7,8 +7,7 @@ export const Hero = () => {
   <section className={styles.container}>
     <div className={styles.content}>
         <h1 className={styles.title}>Hey, I'm Leonardo</h1>
-            <p className={styles.description}>I'm a front-end software developer. I use HTML, CSS, JavaScript and more to create responsive sites and webapps. 
-                Reach out if you'd like to learn more!
+            <p className={styles.description}>I'm a front-end developer. I use HTML, CSS, JavaScript and other techs to create responsive websites. See more info below.
             </p>
             <a href="mailto: Leonardocruzprimary@gmail.com" className={styles.contactBtn}>Contact me</a>
     </div>

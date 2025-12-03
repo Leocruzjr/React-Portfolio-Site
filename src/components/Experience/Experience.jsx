@@ -8,7 +8,7 @@ import Styles from "./Experience.module.css";
 export const Experience = () => {
   return (
   <section id="experience" className={Styles.container}>
-    <h2 className={Styles.title}>Experience</h2>
+    <h2 className={Styles.title}>Technologies & Experience</h2>
     <div className={Styles.content}>
         <div className={Styles.skills}>
             {skills.map((skills, id) => {

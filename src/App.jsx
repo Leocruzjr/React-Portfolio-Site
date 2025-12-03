@@ -8,13 +8,13 @@ import { Contact } from "./components/Contact/Contact";
 
 function App() {
   return <div className={styles.App}>;
-    <NavBar />;
-    <Hero />;
-    <About />;
-    <Experience />;
+    <NavBar />
+    <Hero />
+    <Experience />
+    <About />
     {/*<Projects />;* ----> Add Later on along with Files in src/Projects*/}
-    <Contact />;
-  </div>;
+    <Contact />
+  </div>
 }
 
 export default App

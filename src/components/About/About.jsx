@@ -20,18 +20,16 @@ export const About = () => {
                 <div>
                     <h3>Frontend Developer</h3>
                         <p>
-                        I'm a front end developer. 
-                        My experience consists of 
-                        building responsive and optimized sites. 
+                        Use javascript, html, css to build responsive websites. Typescript in progress in order to work on scalable projects. 
                         </p>
                 </div>
             </li>
             <li className={Styles.item}>
                 <img src={getImageUrl("about/serverIcon.png")} alt='Server Icon'/>
                 <div>
-                    <h3>Backend</h3>
+                    <h3>Project Management</h3>
                         <p>
-                        I have developed optimised back end systems. Primarily using mongoDB. 
+                        4+ years in construction project management, bringing deadline-driven planning, team coordination, and execution discipline to front-end development.
                         </p>
                 </div>
             </li>
@@ -40,7 +38,7 @@ export const About = () => {
                 <div>
                     <h3>UI Design</h3>
                         <p>
-                        Designed landing pages and created figma designs.
+                        Design landing pages and created figma designs.
                         </p>
                 </div>
             </li>
