@@ -34,7 +34,12 @@
     font-family: var(--font-roboto);
     margin-bottom: 52px;
 }
-
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
 .contactBtn {
     text-decoration: none;
     background-color: var(--color-primary);
@@ -43,7 +48,14 @@
     font-size: 30px;
     font-weight: 600;
     padding: 17px 26px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+.contactBtn:hover{
+    transform: scale(1.050);
+}
+.contactBtn:active{
+    transform: scale(1.0);
 }
 
 .heroImg {
@@ -98,10 +110,16 @@
 
 @media screen and (max-width: 830px) {
     .container{
-        flex-direction:column-reverse
+        flex-direction:column-reverse;
     }
 
     .content {
+        text-align: center;
         align-items: center;
     }
+
+    .buttons {
+    flex-direction: column;
+    gap: 15px;
+}
 }
