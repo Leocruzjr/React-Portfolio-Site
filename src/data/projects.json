@@ -2,8 +2,8 @@
   {
     "title": "Subject: YOU",
     "imageSrc": "projects/subjectYouThumbnail.jpg",
-    "description": "Matrix-style personal dashboard to track a single users missions, goals, habits, and notes.",
-    "skills": ["React", "Vite", "JS", "CSS", "HTML"],
+    "description": "Matrix or Sci-fi styled personal dashboard to track a single users missions, goals, habits, and notes.",
+    "skills": ["React", "React DOM", "React Router", "JS", "CSS", "HTML"],
     "demo": "https://www.example.com",
     "source": "https://github.com/Leocruzjr/life-dashboard"
   },
@@ -11,7 +11,7 @@
     "title": "TrailerHub",
     "imageSrc": "projects/trailerHubThumbnail.jpg",
     "description": "Netflix-style trailer browsing app: pick a title → open a player/details view; includes Firebase auth.",
-    "skills": ["React", "Vite", "JS", "CSS", "HTML", "Firebase Auth", "React Router", "TMDB API"],
+    "skills": ["React", "JS", "CSS", "HTML", "Firebase Auth", "React Router"],
     "demo": "https://www.example.com",
     "source": "https://github.com/Leocruzjr/TrailerHub"
   },
