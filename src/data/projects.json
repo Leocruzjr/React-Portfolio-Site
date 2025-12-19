@@ -1,15 +1,15 @@
 [
   {
     "title": "Subject: YOU",
-    "imageSrc": "projects/project.png",
-    "description": "Matrix-style personal dashboard to track a single user’s missions, goals, habits, and notes.",
+    "imageSrc": "projects/subjectYouThumbnail.jpg",
+    "description": "Matrix-style personal dashboard to track a single users missions, goals, habits, and notes.",
     "skills": ["React", "Vite", "JS", "CSS", "HTML"],
     "demo": "https://www.example.com",
     "source": "https://github.com/Leocruzjr/life-dashboard"
   },
   {
     "title": "TrailerHub",
-    "imageSrc": "projects/project.png",
+    "imageSrc": "projects/trailerHubThumbnail.jpg",
     "description": "Netflix-style trailer browsing app: pick a title → open a player/details view; includes Firebase auth.",
     "skills": ["React", "Vite", "JS", "CSS", "HTML", "Firebase Auth", "React Router", "TMDB API"],
     "demo": "https://www.example.com",
@@ -17,7 +17,7 @@
   },
   {
     "title": "Responsive Portfolio Website",
-    "imageSrc": "projects/project.png",
+    "imageSrc": "projects/portfolioThumbnail.jpg",
     "description": "Responsive React portfolio site with projects/skills/experience sections driven by editable JSON data.",
     "skills": ["React", "Vite", "JS", "CSS", "HTML"],
     "demo": "https://www.example.com",
